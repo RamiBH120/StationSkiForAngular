@@ -40,7 +40,7 @@ public class SkieurController {
         return skieurService.addSkieur(skieur);
     }
 
-    @PutMapping("{id}")
+    @PutMapping
     public Skieur updateSkieur(@RequestBody Skieur skieur) {
         return skieurService.updateSkieur(skieur);
     }

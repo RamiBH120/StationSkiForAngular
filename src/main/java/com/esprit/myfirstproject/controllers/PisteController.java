@@ -28,7 +28,7 @@ public class PisteController {
         return PisteService.addPiste(Piste);
     }
 
-    @PutMapping
+    @PutMapping("{id}")
     public Piste updatePiste(@RequestBody Piste Piste) {
         return PisteService.updatePiste(Piste);
     }

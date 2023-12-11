@@ -33,7 +33,7 @@ public class MoniteurController {
         return moniteurService.addMoniteur(Moniteur);
     }
 
-    @PutMapping
+    @PutMapping("{id}")
     public Moniteur updateMoniteur(@RequestBody Moniteur Moniteur) {
         return moniteurService.updateMoniteur(Moniteur);
     }
